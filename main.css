@@ -1,0 +1,259 @@
+article{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.home {
+    background-color: azure;
+    padding-block: 4%;
+}
+
+.home .image img{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    border-radius: 200px;
+}
+.home .name{
+    text-align: center;
+}
+
+.home .icon{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size:150%;
+    margin-block: 30px;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 25px;
+    border-radius: 200px;
+}
+.fa-instagram {
+    background: pink;
+    color: #3B5998;
+    text-align: center;
+    padding: 10px;
+    width: 25px;
+    border-radius: 200px;
+  }
+  
+.fa-steam{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 25px;
+    border-radius: 200px;
+}
+.hobby{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;  
+    padding: 15%;
+    padding-block: 4%;
+}
+
+.hobby .info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.hobby .icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size:300%;
+}
+.hobby .icon > div{
+    width: auto;
+    height: 50px;
+    padding: 3%;
+    border: 3px solid goldenrod;
+    border-radius: 100% ;
+}
+
+.Skill{
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;  
+    padding: 3%;
+    padding-block: 4%;
+}
+.Skill .myskill{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.Skill .myskill .box{
+    width: 100%;
+    margin: 2%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 2%;
+    text-align: center;
+    background-color: white;
+}
+.Skill .icon{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    line-height: 100px;
+    margin: auto;
+}
+.Skill .material-icons{
+    font-size: 35px;
+}
+
+.preference .image img{
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    align-items: center;
+
+}
+
+.preference{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;   
+    padding-block: 4%;
+    text-align: center;
+}
+.preference .title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 100px;
+    
+
+}
+.preference .detail{
+    width: 55%;
+    text-align: center;
+    margin-left: 55px;
+}
+
+
+.assignment{
+    display: block;
+    background-color: azure;
+    padding: 3%;
+
+}
+.assignment .link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 25% 5%;
+}
+.assignment .link button{
+    padding: 3%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 100px ;
+}
+.assignment .project{
+    text-align: center;
+}
+.assignment .project button{
+    padding: 2%;
+
+}
+    /* //////////////////////////////////////////////////////// */
+/* project     */
+.title_02{
+    display: block;
+    margin: 0 5% ;
+    background-color: antiquewhite;
+    padding: 2%;
+}
+.title_02 .head{
+    text-align: center;
+}
+.title_02 .story h3{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.title_02 .image_pj img{
+    display: block;
+    margin: auto;
+}
+.title_02 .image_pj .dis{
+    display: flex;
+    margin: 0 30%;
+}
+.title_02 .setting h3{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.title_02 .setting img{
+    display: block;
+    margin: auto;
+}
+.title_02 .setting .dis{
+    text-align: center; 
+}
+.eiei{
+    background: -webkit-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    background: -o-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    background: -moz-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    /* ref: https://blog.prototypr.io/css-only-multi-color-backgrounds-4d96a5569a20 */
+}
+.eiei article h2{
+    padding-top: 50px;
+}
+#b_pj{
+    padding: 2%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .grid-container {
+		display: grid;
+		grid-template-columns: 50% auto;
+		grid-gap: 10px;
+	}
+    #home{
+        grid-column: 1/span 2;
+    }
+    #hobby{
+        grid-column: 1/span 1;
+    }
+    #Skill{
+        grid-column: 2/span 1;
+    }
+    #preference{
+        grid-column: 1/span 2;
+    }
+    #assignment{
+        grid-column: 1/span 2;
+    }
+}
+@media only screen and (max-width: 800px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 10px;
+	}
+    #home{
+        grid-column: 1/span 1;
+    }
+    #hobby{
+        grid-column: 1/span 1;
+    }
+    #Skill{
+        grid-column: 1/span 1;
+    }
+    #preference{
+        grid-column: 1/span 1;
+    }
+    #assignment{
+        grid-column: 1/span 1;
+    }
+}
